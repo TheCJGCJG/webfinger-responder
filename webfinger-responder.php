@@ -4,11 +4,11 @@ Contributors: thecjgcjg
 Plugin Name: Webfinger Responder
 Description: Responds to /.well-known/webfinger requests with a Webfinger payload.
 Author: Charles Gillham
-Version: 1.0.0
+Version: 1.2.0
 Tags: webfinger, oidc
 Requires at least: 6.0
 Tested up to: 6.7
-Stable tag: 1.0.0
+Stable tag: 1.2.0
 License: GPLv2
 License URI: https://github.com/TheCJGCJG/webfinger-responder/blob/main/LICENSE
 */

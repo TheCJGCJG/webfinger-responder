@@ -6,17 +6,9 @@ class Webfinger_Admin {
         add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
     }
 
-    public function register_settings() {
-        register_setting('webfinger_options', 'webfinger_path', array(
-            'default' => '/.well-known/webfinger',
-            'sanitize_callback' => 'sanitize_text_field'
-        ));
-        register_setting('webfinger_options', 'issuer_url', array(
-            'sanitize_callback' => 'sanitize_url'
-        ));
-        register_setting('webfinger_options', 'resource_regexps', array(
-            'sanitize_callback' => array($this, 'sanitize_regexps')
-        ));
+    function register_settings() {
+        register_setting('webfinger_options', 'webfinger_path');
+        register_setting('webfinger_options', 'webfinger_resource_patterns');
     }
 
     public function add_menu_page() {
@@ -44,7 +36,7 @@ class Webfinger_Admin {
             'webfinger-admin',
             WEBFINGER_PLUGIN_URL . 'admin/js/webfinger-admin.js',
             array('jquery'),
-            '1.0.0',
+            '1.2.0',
             true
         );
     }
