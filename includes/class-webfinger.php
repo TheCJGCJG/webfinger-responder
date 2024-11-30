@@ -49,6 +49,7 @@ class Webfinger
 
             // Send JSON response using WordPress function
             header('Content-Type: application/jrd+json');
+            header('Access-Control-Allow-Origin: *');
             echo wp_json_encode($response);
             exit;
         }
