@@ -21,7 +21,7 @@
                 <div class="pattern-entry">
                     <h3>Pattern</h3>
                     <input type="text" 
-                           name="webfinger_resource_patterns[<?php echo $index; ?>][pattern]" 
+                           name="webfinger_resource_patterns[<?php echo esc_attr($index); ?>][pattern]" 
                            value="<?php echo esc_attr($pattern_data['pattern']); ?>"
                            class="regular-text">
                     
@@ -30,12 +30,12 @@
                         <?php foreach ($pattern_data['links'] as $link_index => $link): ?>
                             <div class="link-entry">
                                 <input type="text" 
-                                       name="webfinger_resource_patterns[<?php echo $index; ?>][links][<?php echo $link_index; ?>][rel]" 
+                                       name="webfinger_resource_patterns[<?php echo esc_attr($index); ?>][links][<?php echo esc_attr($link_index); ?>][rel]" 
                                        value="<?php echo esc_attr($link['rel']); ?>" 
                                        placeholder="Relation (rel)" 
                                        class="regular-text">
                                 <input type="text" 
-                                       name="webfinger_resource_patterns[<?php echo $index; ?>][links][<?php echo $link_index; ?>][href]" 
+                                       name="webfinger_resource_patterns[<?php echo esc_attr($index); ?>][links][<?php echo esc_attr($link_index); ?>][href]" 
                                        value="<?php echo esc_attr($link['href']); ?>" 
                                        placeholder="URL (href)" 
                                        class="regular-text">
@@ -52,6 +52,7 @@
         <?php submit_button(); ?>
     </form>
 </div>
+
 
 <script>
 jQuery(document).ready(function($) {
