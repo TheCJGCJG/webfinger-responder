@@ -17,7 +17,6 @@ Webfinger Responder adds Webfinger protocol support to your WordPress site.
 Features:
 - Implements Webfinger protocol specification
 - Automatic user discovery
-- Compatible with ActivityPub and other Fediverse protocols
 - Easy to configure and use
 - Lightweight implementation
 
