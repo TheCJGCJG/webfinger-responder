@@ -26,10 +26,11 @@ require_once WEBFINGER_PLUGIN_DIR . 'includes/class-webfinger.php';
 require_once WEBFINGER_PLUGIN_DIR . 'admin/class-webfinger-admin.php';
 
 // Initialize the plugin
-function webfinger_init() {
+function webfinger_init()
+{
     $plugin = new Webfinger();
     $plugin->init();
-    
+
     if (is_admin()) {
         $admin = new Webfinger_Admin();
         $admin->init();
