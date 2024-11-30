@@ -5,7 +5,7 @@ Tags: webfinger, oidc
 Requires at least: 6.0
 Tested up to: 6.4
 Stable tag: 1.0.0
-License: GPL2
+License: GPLv2
 License URI: https://github.com/TheCJGCJG/wordpress-webfinger-responder/blob/main/LICENSE
 
 A WordPress plugin that implements Webfinger protocol support for WordPress sites.
